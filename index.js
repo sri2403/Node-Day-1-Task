@@ -16,8 +16,8 @@ app.get("/",(req,res)=>{
     fs.writeFileSync(filepath,`${today}`,"utf8")
     res.status(200).send(
         `<div style="text-align: center;">
-            <p>File created at <strong>${filepath}</strong> by this data => <strong>${today}</strong>.</p>
-            <p>Change the endpoint to <strong>/read</strong> to retrieve all Timestamp's data.</p>
+            <h3>File created at <strong>${filepath}</strong> by this data => <strong>${today}</strong>.</h3>
+            <h3>Change the endpoint to <strong>/read</strong> to retrieve all Timestamp's data.</h3>
         </div>`
     );
 })
