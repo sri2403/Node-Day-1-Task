@@ -14,9 +14,10 @@ app.get("/",(req,res)=>{
     let today = format(new Date(),"dd-MM-yyyy-hh-mm-ss");
     const filepath=`Timestamp/${today}.txt`
     fs.writeFileSync(filepath,`${today}`,"utf8")
-    res.status(200).send(`File created at ${filepath} by this data => ${today}.
-    
-    Change the endpoint to /read to retrieve the all Timestamp's data.`);
+    res.status(200).send(
+        `<p>File created at <strong>${filepath}</strong> by this data => <strong>${today}</strong>.</p>
+        <p>Change the endpoint to <code>/read</code> to retrieve all Timestamp's data.</p>`
+    );
 })
 app.get("/read",(req,res)=>{
     const directoryPath = "Timestamp"; 
