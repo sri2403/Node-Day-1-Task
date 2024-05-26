@@ -10,7 +10,7 @@ const PORT=4000;
 //middleware
 app.use(express.json());
 
-app.get("/create",(req,res)=>{
+app.get("/",(req,res)=>{
     let today = format(new Date(),"dd-MM-yyyy-hh-mm-ss");
     const filepath=`Timestamp/${today}.txt`
     fs.writeFileSync(filepath,`${today}`,"utf8")
