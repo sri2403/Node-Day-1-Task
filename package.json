@@ -1,0 +1,19 @@
+{
+  "name": "node-day-1-task",
+  "version": "1.0.0",
+  "description": "Node day 1 Task",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "Sri",
+  "license": "ISC",
+  "dependencies": {
+    "date-fns": "^3.6.0",
+    "express": "^4.19.2",
+    "nodemon": "^3.1.1"
+  }
+}
